@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#5856D6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/create_event_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:text="创 建"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/activity_types_sview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="none" 
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_all"
+                    android:gravity="center_horizontal"
+                    android:text="全部"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_sport"
+                    android:gravity="center_horizontal"
+                    android:text="体育"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_friends"
+                    android:gravity="center_horizontal"
+                    android:text="交友"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_study"
+                    android:gravity="center_horizontal"
+                    android:text="学习"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_music"
+                    android:gravity="center_horizontal"
+                    android:text="音乐"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_trip"
+                    android:gravity="center_horizontal"
+                    android:text="旅行"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_lecture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_lecture"
+                    android:gravity="center_horizontal"
+                    android:text="讲座"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/act_other"
+                    android:gravity="center_horizontal"
+                    android:text="其他"
+                    android:textColor="#919191"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listview_act"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:dividerHeight="8dp"
+            android:divider="@color/gray_background"
+            ptr:ptrHeaderTextColor="#333333" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+</RelativeLayout>

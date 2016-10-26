@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_radio" />
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+        <RadioButton
+            android:id="@+id/rb_function"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_function"
+            android:text="@string/tab_function"
+            android:textColor="@color/bottom_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_activity"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_newscenter"
+            android:text="@string/tab_activity"
+            android:textColor="@color/bottom_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_project"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_smartservice"
+            android:text="@string/tab_project"
+            android:textColor="@color/bottom_text_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_myself"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_govaffairs"
+            android:text="@string/tab_myself"
+            android:textColor="@color/bottom_text_color" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ @author 巩文婷
+ @E-mail:1763623356@qq.com
+ @version 创建时间：${date} ${time} 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="获取图片"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_getimg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_green_selector"
+        android:text="从相册获取"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_getCamera"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_green_selector"
+        android:text="拍摄照片获取"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_gray_selector"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

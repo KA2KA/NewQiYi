@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ @author 巩文婷
+ @E-mail:1763623356@qq.com
+ @version 创建时间：${date} ${time} 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#0B7EE8">
+        <Button 
+             android:id="@+id/back_personal_info"
+             android:clickable="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#0B7EE8"
+             android:drawableLeft="@drawable/back"
+             android:paddingTop="12dp"
+             android:paddingBottom="12dp"
+             android:drawableStart="@drawable/back"
+             android:text="更多"
+             android:textColor="@android:color/black"
+             android:textSize="18sp"
+             android:singleLine="true"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        
+        <ImageView
+            android:id="@+id/touxiang2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:layout_below="@id/touxiang2"
+            android:layout_centerHorizontal="true"
+            android:text="当前版本1.0"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        android:id="@+id/change_name"
+        android:onClick="changeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="意见反馈"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        android:id="@+id/change_sex"
+        android:onClick="changSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="消息推送"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    
+   
+    <RelativeLayout
+        android:id="@+id/change_password"
+        android:onClick="changPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="常见问题"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        android:id="@+id/company_yanzhengma"
+        android:onClick="CompanyYanzhengma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        android:id="@+id/change_adress"
+        android:onClick="userContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="软件更新"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        
+        android:onClick="changeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="分享给好友"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="首次分享+200启币"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    
+    <RelativeLayout
+        
+        android:onClick="userContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="申请项目"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="35dp">
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="退出"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="#0B7EE8"/>
+    </LinearLayout>
+    
+</LinearLayout>
+</LinearLayout>

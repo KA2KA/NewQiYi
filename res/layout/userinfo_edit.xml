@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ @author 巩文婷
+ @E-mail:1763623356@qq.com
+ @version 创建时间：${date} ${time} 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#0B7EE8">
+        
+        <TextView 
+             android:id="@+id/back_personal_info"
+             android:clickable="true"
+             android:onClick="backUserinfoMain"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#0B7EE8"
+             android:drawableLeft="@drawable/back"
+             android:paddingTop="12dp"
+             android:paddingBottom="12dp"
+             android:drawableStart="@drawable/back"
+             android:text="编辑个人信息"
+             android:textColor="@android:color/black"
+             android:textSize="18sp"
+             android:singleLine="true"/>
+        <TextView
+             android:id="@+id/change_name_save"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:paddingTop="12dp"
+             android:paddingBottom="12dp"
+             android:paddingRight="15dp"
+             android:paddingLeft="10dp"
+             android:text="完成"
+             android:textColor="@android:color/black"
+             android:background="#0B7EE8"
+             android:textSize="18sp"
+             android:singleLine="true"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+    
+    <RelativeLayout
+        android:id="@+id/change_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="昵称"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        
+        <EditText
+            android:id="@+id/user_name_test"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="哈哈哈"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        android:id="@+id/change_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="性别"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="女"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    
+    <RelativeLayout
+        android:id="@+id/change_password"
+        android:onClick="changPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/details" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        android:id="@+id/change_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="账号"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="绑定手机号"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    
+    <RelativeLayout
+        android:id="@+id/company_yanzhengma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="企业验证码"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="企业验证码"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <RelativeLayout
+        android:id="@+id/change_adress"
+        android:onClick="userContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系地址"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/details" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+</LinearLayout>
+</LinearLayout>

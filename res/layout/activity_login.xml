@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground" >
+
+    <com.newqiyi.view.CircleImageView
+        android:id="@+id/im_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/default_icon_user" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/im_photo"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_selector_input"
+        android:drawableLeft="@drawable/user_account_icon"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/user_account_icon"
+        android:hint="手机号"
+        android:minHeight="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/name"
+        android:background="@drawable/login_selector_input"
+        android:drawableLeft="@drawable/user_pwd_lock_icon"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/user_pwd_lock_icon"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:minHeight="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#5856D6"
+        android:onClick="login"
+        android:text="登	    录"
+        android:textColor="#FFFFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="zhaohui"
+            android:text="无法登陆？"
+            android:textColor="#5856D6"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="right"
+            android:onClick="zhuce"
+            android:text="新用户"
+            android:textColor="#5856D6"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

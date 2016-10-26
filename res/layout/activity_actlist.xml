@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_actlist_back"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/gray_background" >
+
+    <RelativeLayout
+        android:id="@+id/activity_actlist_posterback"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/activity_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray_background"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_list_title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray_background"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/activity_list_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/gray_background"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_list_member_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray_background"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/activity_list_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_list_member_num"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

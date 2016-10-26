@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UserLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/User_Layout_Layout01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/common_top_bar_color" >
+
+        <com.newqiyi.view.RoundImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:src="@drawable/defaultavatar" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_avatar"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/v_page"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/user_name"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_toLeftOf="@id/v_page"
+            android:text="登录"
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/user_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_toRightOf="@id/v_page"
+            android:text="注册"
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/user_point_sign"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="个性签名"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fourLinear"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/User_Layout_Layout01"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_list_item_bg" >
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_point"
+                android:layout_centerHorizontal="true"
+                android:text="启 币"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="0"
+                android:textColor="@color/gray" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/lightgray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_focus_layout"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_list_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_focus_num"
+                android:layout_centerHorizontal="true"
+                android:text="关 注"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_focus_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="0"
+                android:textColor="@color/gray" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/lightgray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_fans_layout"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_list_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_fans_num"
+                android:layout_centerHorizontal="true"
+                android:text="粉 丝"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_fans_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="0"
+                android:textColor="@color/gray" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/lightgray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_collect_layout"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_list_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_collect_num"
+                android:layout_centerHorizontal="true"
+                android:text="收 藏"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_collect_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="0"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fourLinear"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="我的活动"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/user_activity"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_list_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="启币流水"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/user_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/user_pay"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_list_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="软件设置"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more" />
+    </RelativeLayout>
+
+</RelativeLayout>

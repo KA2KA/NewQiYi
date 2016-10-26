@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newqiyi.activity.JoinActActivity" >
+
+    <RelativeLayout
+        android:id="@+id/Update_Name_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_color"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/update_name_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="updateNameBack"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/top_bar_back" />
+        <!-- 设置活动界面Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/update_name_back"
+            android:text="修改昵称"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/update_name_Layout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_Name_Bar"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_list_item_bg" >
+
+        <EditText
+            android:id="@+id/update_name_edit"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="请输入新昵称"
+            android:maxLength="8"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submitNewName"
+        android:layout_width="420dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/update_name_Layout01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/common_top_bar_color"
+        android:onClick="submitNewName"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp" >
+    </Button>
+
+</RelativeLayout>

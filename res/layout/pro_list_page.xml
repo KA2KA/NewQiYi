@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+   <com.newqiyi.view.RefreshListView
+        android:id="@+id/lv_item_pros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@drawable/news_list_line"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</FrameLayout>

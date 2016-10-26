@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/newqiyi/activity/DonateActivity.java=UTF-8
+encoding//src/com/newqiyi/adapter/QIYIAdapter.java=GB2312
+encoding//src/com/newqiyi/domain/ProsToAD.java=GB2312
+encoding//src/com/newqiyi/fragment/BaseFragment.java=GBK
+encoding//src/com/newqiyi/pager/ProjectPage.java=UTF-8
+encoding//src/com/newqiyi/util/DisplayUtil.java=UTF-8
+encoding//src/com/newqiyi/view/RefreshListView.java=GBK
+encoding//src/com/newqiyi/widget/AlertDialog.java=UTF-8
+encoding/<project>=UTF-8

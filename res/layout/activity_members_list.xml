@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <com.newqiyi.view.RoundImageView
+        android:id="@+id/member_avatar"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/member_avatar"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/member_sex"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/member_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@+id/member_avatar" />
+
+    <TextView
+        android:id="@+id/member_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/member_sex"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/member_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_age"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/member_avatar"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+</RelativeLayout>

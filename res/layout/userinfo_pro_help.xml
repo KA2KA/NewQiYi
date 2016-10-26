@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ @author 巩文婷
+ @E-mail:1763623356@qq.com
+ @version 创建时间：${date} ${time} 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#0B7EE8">
+        <TextView 
+             android:id="@+id/back_personal_info"
+             android:clickable="true"
+             android:onClick="backUserinfoMain"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#0B7EE8"
+             android:drawableLeft="@drawable/back"
+             android:paddingTop="12dp"
+             android:paddingBottom="12dp"
+             android:drawableStart="@drawable/back"
+             android:text="已捐项目"
+             android:textColor="@android:color/black"
+             android:textSize="18sp"
+             android:singleLine="true"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+    
+    
+    <RelativeLayout 
+        android:id="@+id/change_name"
+        android:onClick="changeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="在捐项目"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="结束项目"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="捐赠的n个项目还在进行"
+            android:paddingTop="45dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="19sp" />
+    
+</LinearLayout>
+    
+    <View 
+        android:background="@drawable/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"/>
+    
+</LinearLayout>
+</LinearLayout>

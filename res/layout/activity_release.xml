@@ -1,0 +1,355 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ReleaseActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout00"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_color"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/Release_activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="releaseactivityBack"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/top_bar_back" />
+        <!-- 设置活动界面Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="创建活动"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Release_activity_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:onClick="releaseActivity"
+            android:text="发 布"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+    <!-- 设置活动标题 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Release_activity_Layout00"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg" >
+
+        <EditText
+            android:id="@+id/Release_activity_EditText"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:ems="20"
+            android:hint="活动名称（5-20字）"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout10"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Release_activity_Layout01"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="initiatorTel" >
+
+        <EditText
+            android:id="@+id/Release_activity_initiatorTel"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:ems="11"
+            android:hint="请填写您的手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <!-- 设置活动开始时间 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout02"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Release_activity_Layout10"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="setStartTime" >
+
+        <TextView
+            android:id="@+id/release_activity_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="开始时间"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/release_activity_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="点击设置"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!-- 设置活动结束时间 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout03"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Release_activity_Layout02"
+        android:layout_marginTop="0.1dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="setEndTime" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="结束时间"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/release_activity_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="点击设置"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!-- 设置活动地点 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout04"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Release_activity_Layout03"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="setLocation" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="地点"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/locationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="点击设置"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!-- 设置活动类型 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout05"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Release_activity_Layout04"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="setActivityKind" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="活动类型"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/activity_kind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="点击选择"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!-- 设置活动开始提醒时间 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout06"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Release_activity_Layout05"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="setPersonNum" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="活动人数(含本人)"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/activity_person_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="0"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!-- 设置活动介绍信息 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout07"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/Release_activity_Layout06"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="editTextActivity" >
+
+        <TextView
+            android:id="@+id/activityIntroductionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="活动介绍"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edit_activity_text_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="点击编写"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/edit_activity_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityIntroductionText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+    </RelativeLayout>
+    <!-- 设置活动海报 -->
+
+    <RelativeLayout
+        android:id="@+id/Release_activity_Layout08"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Release_activity_Layout07"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="setActivityPoster" >
+
+        <TextView
+            android:id="@+id/setactivityPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="设置海报"
+            android:textColor="@color/itemtext_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/poster_activity"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/activity_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#5856D6"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/create_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="createActivity"
+            android:text="创建" />
+
+        <Button
+            android:id="@+id/location_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/create_event"
+            android:onClick="locationActivity"
+            android:text="定位" />
+    </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/activity_list"
+         android:layout_below="@+id/activity_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/Activity_freshList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</RelativeLayout>

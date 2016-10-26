@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newqiyi.activity.MyActListActivity" >
+
+    <include
+        android:id="@+id/i_bar"
+        layout="@layout/title_bar" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_act_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/i_bar"
+        android:scrollbars="none"
+        ptr:ptrHeaderTextColor="#333333" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ReleaseActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/User_Info_Layout_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_color"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/User_Info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="userInfoBack"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/top_bar_back" />
+        <!-- 设置活动界面Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="个人信息"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/User_Info_Layout_02"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/User_Info_Layout_01"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="updateUserAvatar" >
+
+        <TextView
+            android:id="@+id/updateAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="头像"
+            android:textColor="@color/itemtext_color"
+            android:textSize="18sp" />
+
+        <com.newqiyi.view.CircleImageView
+            android:id="@+id/user_avatar_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/User_Info_Layout_03"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/User_Info_Layout_02"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="updateUserName" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="昵称"
+            android:textColor="@color/itemtext_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="点击修改"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/User_Info_Layout_04"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/User_Info_Layout_03"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="updateUserBirthday" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="生日"
+            android:textColor="@color/itemtext_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_birthday_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="点击修改"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/User_Info_Layout_05"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/User_Info_Layout_04"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="updateUserAddress" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="地区"
+            android:textColor="@color/itemtext_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="点击设置"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/User_Info_Layout_06"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/User_Info_Layout_05"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="updateUserSex" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="性别"
+            android:textColor="@color/itemtext_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_sex_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="点击修改"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/User_Info_Layout_07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/User_Info_Layout_06"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:onClick="updateUserSignature" >
+
+        <TextView
+            android:id="@+id/user_signature_text_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="个性签名"
+            android:textColor="@color/itemtext_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_signature_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_signature_text_sign"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/uploadInfo"
+        android:layout_width="420dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/User_Info_Layout_07"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/common_top_bar_color"
+        android:onClick="uploadInfo"
+        android:text="保  存"
+        android:textColor="@color/white"
+        android:textSize="20sp" >
+    </Button>
+
+</RelativeLayout>

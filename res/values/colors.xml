@@ -1,0 +1,34 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gray_background">#ebebeb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black" >#000000</color>
+    <color name="blue">#0000ff</color>
+    <color name="red">#E51A18</color>
+    <color name="line_color">#523E2E</color>
+    <color name="search_tab_nomarl">#363636</color>
+    <color name="search_tab_select">#E82926</color>
+    <color name="menu_item_text_color">#E60200</color>
+    <color name="news_item_has_read_textcolor">#828282</color>
+    <color name="news_item_no_read_textcolor">#363636</color>
+    <color name="common_top_bar_color">#5856D6</color>
+    <color name="maincolor">#5856D6</color>
+    <color name="itemtext_color">#353535</color>
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="alert">#CC0000</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+    <color name="custom">#0099CC</color>
+    <color name="darkgray">#333333</color>
+    <color name="gray">#666666</color>
+    <color name="lightgray">#cccccc</color>
+    <color name="yellow">#FF3333</color>
+    <color name="green">#009933</color>
+    <color name="gold">#ff9900</color>
+    <color name="province_line_border">#D0D0D0</color>
+
+</resources>

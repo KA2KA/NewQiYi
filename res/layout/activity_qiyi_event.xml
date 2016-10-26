@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActivityActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    tools:context="com.qiyi.main.QiyiEventActivity" >
+
+    <RelativeLayout
+        android:id="@+id/Activity_Layout_Main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#5856D6"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/Activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="Activity_back"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Activity_Layout_Main" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/Activity_UI_Back"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/darkgray" >
+
+                <RelativeLayout
+                    android:id="@+id/Activity_UI"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="@color/black" >
+
+                    <TextView
+                        android:id="@+id/activity_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activity_location_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_title_text"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="17dp"
+                       android:layout_alignLeft="@+id/activity_title_text"
+                        android:background="@drawable/buttonshape"
+                        android:clickable="true"
+                        android:onClick="intoActAddress"
+                        android:textColor="#006699"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/activity_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_location_text"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="8dp"
+                         android:layout_alignLeft="@+id/activity_title_text"
+                        android:textColor="#339966"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/activity_type_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_time_text"
+                         android:layout_alignLeft="@+id/activity_time_text"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/gold"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.newqiyi.view.RoundImageView
+                        android:id="@+id/initiator_avatar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignTop="@+id/activity_location_text"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:id="@+id/members_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Join_activity_btn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/buttonshape"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/Join_activity_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:onClick="JoinActivity"
+                        android:background="@color/maincolor"
+                        android:text="报名" >
+                    </Button>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Activity_Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Activity_UI_Back"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/activity_Info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Activity_Click_Details"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/Activity_Info"
+                android:layout_marginTop="0.3dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:onClick="lookOverView" >
+
+                <TextView
+                    android:id="@+id/activity_click_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="查看详情"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/activity_Info_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/activity_click_details"
+                    android:src="@drawable/triangle_down" >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_address_map"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/Activity_Click_Details"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_list_item_bg"
+                android:onClick="intoActAddress" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="查看地图"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/act_map_Sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/triangle_right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/act_map_Sign"
+                    android:text="规划路线"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_menber_sign"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/activity_address_map"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_list_item_bg"
+                android:onClick="activityMemberList" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="报名成员"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/members_list_Sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/triangle_right" />
+
+                <TextView
+                    android:id="@+id/members_list_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/members_list_Sign"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_menber_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_menber_sign"
+                android:layout_marginTop="5dp" >
+
+                <HorizontalScrollView
+                    android:id="@+id/Activity_menber_Scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false" >
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_comment"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/activity_menber_avatar"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_list_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="最新评论"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

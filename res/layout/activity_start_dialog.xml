@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/start_activity_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_style_alert_dialog_background"
+        android:orientation="vertical" >
+
+        <com.newqiyi.widget.DatePicker
+            android:id="@+id/start_activity_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp" />
+
+        <com.newqiyi.widget.TimePicker
+            android:id="@+id/start_activity_tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/start_activity_dp"
+            android:layout_alignTop="@+id/start_activity_dp"
+            android:layout_toRightOf="@+id/start_activity_dp" />
+
+        <TextView
+            android:id="@+id/start_activity_lbl_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/start_activity_dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/start_activity_lbl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/start_activity_lbl_date"
+            android:layout_toRightOf="@+id/start_activity_lbl_date"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/activitystarttime_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/start_activity_tp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/activitystarttime_affirm"
+            android:background="@drawable/btn_style_alert_dialog_cancel"
+            android:text="@string/text_cancel"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/activitystarttime_affirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/start_activity_tp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_style_alert_dialog_button"
+            android:text="@string/text_affirm" />
+    </RelativeLayout>
+
+</RelativeLayout>

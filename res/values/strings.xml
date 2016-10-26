@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">新启益</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">dummy_content</string>
+    <string name="tab_function">首页</string>
+    <string name="tab_activity">活动</string>
+    <string name="tab_project">发现</string>
+    <string name="tab_myself">我</string>
+    <string name="removeItem">删除</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_affirm">确定</string>
+    <string name="text_size_normal">16sp</string>
+    <string name="text_size_big">24sp</string>
+    <string name="text_size_small">14sp</string>
+    <string name="text_size_mostsmall">12sp</string>
+    <string name="title_activity_apply">ApplyActivity</string>
+    <string name="title_activity_members">MembersActivity</string>
+    <string name="title_activity_zwq">ZwqActivity</string>
+    <string name="title_activity_join_act">JoinActActivity</string>
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_head_change">HeadChangeActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_regist_data">RegistDataActivity</string>
+    <string name="title_activity_re_set_pwd">ReSetPwdActivity</string>
+    <string name="title_activity_update_user_info">UpdateUserInfoActivity</string>
+    <string name="title_activity_update_name">UpdateNameActivity</string>
+    <string name="title_activity_update_signature">UpdateSignatureActivity</string>
+    <string name="title_activity_act_map">ActMapActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_act_address_map">ActAddressMap</string>
+    <string name="title_activity_other_user">OtherUserActivity</string>
+    <string name="title_activity_user_act_list">UserActList</string>
+    <string name="title_activity_user_focus">UserFocusActivity</string>
+    <string name="title_activity_user_fans">UserFansActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_score_paying">ScorePayingActivity</string>
+
+</resources>

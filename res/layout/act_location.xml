@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/act_location_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/activity_location_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="ActivitylocationBack"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/activity_location_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="选取活动地点"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/actlocationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_location_topbar"
+        android:layout_marginBottom="50dp"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/act_back_location"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        android:onClick="initializeMap"
+        android:src="@drawable/map_button" />
+
+    <TextView
+        android:id="@+id/act_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="长按地图处设置活动地点"
+        android:textColor="@color/gray"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
